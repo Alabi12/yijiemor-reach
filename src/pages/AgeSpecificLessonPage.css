@@ -1,0 +1,102 @@
+/* src/pages/AgeSpecificLessonPage.css */
+.age-specific-lesson-page {
+  padding: 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.age-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.age-badge {
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.learning-style {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  color: #666;
+}
+
+.young-learner-help {
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.young-learner-help p {
+  margin: 0;
+  color: #1976d2;
+  font-size: 0.9em;
+}
+
+.age-specific-feedback {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.age-specific-feedback p {
+  margin: 0;
+  font-style: italic;
+}
+
+.simple-animation .animated-chars {
+  font-size: 3em;
+  text-align: center;
+  animation: bounce 2s infinite;
+}
+
+.detailed-animation {
+  text-align: center;
+}
+
+.number-sequence {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.number-patterns {
+  font-size: 1em;
+  color: #666;
+  font-family: monospace;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.continue-button.age-adapted {
+  font-size: 1.1em;
+  padding: 15px 30px;
+}
+
+/* Responsive design for different ages */
+@media (max-width: 768px) {
+  .age-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .simple-animation .animated-chars {
+    font-size: 2em;
+  }
+}

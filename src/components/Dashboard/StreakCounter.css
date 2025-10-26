@@ -1,0 +1,58 @@
+/* src/components/Dashboard/StreakCounter.css */
+.streak-counter {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.flame {
+  font-size: 2em;
+  animation: pulse 2s infinite;
+}
+
+.streak-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.streak-count {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.streak-label {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .streak-counter {
+    padding: 12px 20px;
+  }
+  
+  .flame {
+    font-size: 1.5em;
+  }
+  
+  .streak-count {
+    font-size: 1.3em;
+  }
+}

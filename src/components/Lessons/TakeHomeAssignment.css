@@ -1,0 +1,331 @@
+/* src/components/Lessons/TakeHomeAssignment.css */
+.take-home-assignment {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.assignment-header h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.assignment-badge {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.age-prompt {
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.age-prompt p {
+  margin: 0;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.assignment-content {
+  margin-bottom: 30px;
+}
+
+.task-card {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-left: 5px solid #667eea;
+}
+
+.task-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+.task-description {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.instructions {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.instructions h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instructions p {
+  color: #666;
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.materials-needed {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.materials-needed h4 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.materials-needed ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.materials-needed li {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.time-estimate {
+  background: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.time-icon {
+  font-size: 1.2em;
+}
+
+.submission-section {
+  margin-top: 30px;
+}
+
+.submission-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+.text-submission,
+.image-submission {
+  margin-bottom: 25px;
+}
+
+.text-submission label,
+.image-submission label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.text-submission textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1em;
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.text-submission textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.upload-area {
+  border: 2px dashed #e0e0e0;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.upload-area:hover {
+  border-color: #667eea;
+}
+
+.upload-area input[type="file"] {
+  display: none;
+}
+
+.upload-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.upload-hint {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.image-preview {
+  margin-top: 15px;
+}
+
+.image-preview h5 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.preview-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.file-name {
+  color: #333;
+  font-size: 0.9em;
+}
+
+.remove-button {
+  background: #ff4757;
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.remove-button:hover {
+  background: #ff3742;
+}
+
+.reminder {
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.reminder p {
+  color: #1976d2;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.submit-assignment {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-assignment:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.submit-assignment:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.completion-note {
+  background: #e8f5e8;
+  border: 1px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.completion-note p {
+  margin: 0 0 10px 0;
+  color: #2e7d32;
+}
+
+.young-learner-note {
+  font-style: italic;
+  color: #666 !important;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .take-home-assignment {
+    padding: 20px;
+  }
+  
+  .assignment-header h2 {
+    font-size: 1.6em;
+  }
+  
+  .task-card {
+    padding: 20px;
+  }
+  
+  .upload-area {
+    padding: 20px;
+  }
+  
+  .upload-button {
+    padding: 10px 20px;
+  }
+}

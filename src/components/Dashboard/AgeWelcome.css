@@ -1,0 +1,68 @@
+/* src/components/Dashboard/AgeWelcome.css */
+.age-welcome {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.age-welcome-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.age-icon {
+  font-size: 4em;
+  flex-shrink: 0;
+}
+
+.age-welcome-text h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8em;
+}
+
+.age-welcome-text p {
+  margin: 0 0 15px 0;
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.age-characteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.characteristic {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .age-welcome-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .age-icon {
+    font-size: 3em;
+  }
+  
+  .age-welcome-text h2 {
+    font-size: 1.5em;
+  }
+  
+  .characteristic {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}

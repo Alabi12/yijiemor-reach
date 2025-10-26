@@ -1,0 +1,223 @@
+/* src/components/Lessons/LessonIntroduction.css */
+.lesson-introduction {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.introduction-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.introduction-header h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.lesson-description {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.video-prompt {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.prompt-icon {
+  font-size: 1.2em;
+}
+
+.animation-placeholder {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  padding: 40px;
+  margin: 30px 0;
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation-content {
+  width: 100%;
+}
+
+.simple-animation .animated-chars {
+  font-size: 3em;
+  text-align: center;
+  animation: bounce 2s infinite;
+}
+
+.detailed-animation {
+  text-align: center;
+}
+
+.number-sequence {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.number-patterns {
+  font-size: 1em;
+  color: #666;
+  font-family: monospace;
+}
+
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.letter-tile {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.default-animation {
+  text-align: center;
+}
+
+.animation-icon {
+  font-size: 4em;
+  margin-bottom: 15px;
+}
+
+.default-animation p {
+  color: #666;
+  font-size: 1.1em;
+}
+
+.thinking-task {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 30px 0;
+  border-left: 5px solid #667eea;
+}
+
+.thinking-task h3 {
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.thinking-task p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.thinking-task textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1em;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.thinking-task textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.continue-button.age-adapted {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.continue-button.age-adapted:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.continue-button.age-adapted:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.young-learner-help {
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.young-learner-help p {
+  color: #1976d2;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+  .lesson-introduction {
+    padding: 20px;
+  }
+  
+  .introduction-header h2 {
+    font-size: 1.6em;
+  }
+  
+  .animation-placeholder {
+    padding: 20px;
+    min-height: 150px;
+  }
+  
+  .simple-animation .animated-chars {
+    font-size: 2em;
+  }
+  
+  .alphabet-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 200px;
+  }
+  
+  .letter-tile {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+}

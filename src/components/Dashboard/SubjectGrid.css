@@ -1,0 +1,145 @@
+/* src/components/Dashboard/SubjectGrid.css */
+.subject-grid {
+  margin-bottom: 30px;
+}
+
+.subject-grid h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+.subject-grid-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.subjects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.subject-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.subject-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--subject-color, #667eea);
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--subject-color, #667eea);
+}
+
+.subject-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.subject-name {
+  text-align: center;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.subject-description {
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+}
+
+.subject-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.lessons-available {
+  background: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.lessons-completed {
+  background: #e8f5e8;
+  color: #4CAF50;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.subject-progress {
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--subject-color, #667eea);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.progress-percentage {
+  font-weight: 600;
+  color: var(--subject-color, #667eea);
+}
+
+@media (max-width: 768px) {
+  .subjects-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .subject-card {
+    padding: 20px;
+  }
+  
+  .subject-icon {
+    font-size: 2.5em;
+  }
+  
+  .subject-stats {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

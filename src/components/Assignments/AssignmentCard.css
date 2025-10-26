@@ -1,0 +1,123 @@
+/* src/components/Assignments/AssignmentCard.css */
+.assignment-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid #667eea;
+}
+
+.assignment-card.completed {
+  border-left-color: #4CAF50;
+  background: #f8fff8;
+}
+
+.assignment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.assignment-header h3 {
+  color: #333;
+  margin: 0;
+  font-size: 1.3em;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.assignment-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.assignment-card:not(.completed) .assignment-status {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.assignment-card.completed .assignment-status {
+  background: #d4edda;
+  color: #155724;
+}
+
+.assignment-details {
+  margin-bottom: 20px;
+}
+
+.assignment-details p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.assignment-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.assignment-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.assignment-card.completed .submit-button {
+  background: #4CAF50;
+}
+
+.assignment-card.completed .submit-button:hover {
+  background: #45a049;
+}
+
+@media (max-width: 768px) {
+  .assignment-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .assignment-header h3 {
+    margin-right: 0;
+  }
+  
+  .assignment-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

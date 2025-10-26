@@ -1,0 +1,171 @@
+/* src/pages/AssignmentsPage.css */
+.assignments-page {
+  padding: 20px 0;
+}
+
+.assignments-header {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.assignments-header h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.assignment-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.assignment-stats .stat {
+  text-align: center;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 15px;
+}
+
+.assignment-stats .count {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.filter-tabs {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.tab:hover:not(.active) {
+  background: #f0f0f0;
+}
+
+.assignments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.no-assignments {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.no-assignments h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.no-assignments p {
+  color: #666;
+  font-size: 1.1em;
+}
+
+.weekly-assignments {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.weekly-assignments h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.weekly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.weekly-card {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.weekly-card:hover {
+  transform: translateY(-5px);
+}
+
+.weekly-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+}
+
+.weekly-card p {
+  margin: 0 0 15px 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.weekly-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .assignments-header {
+    padding: 20px;
+  }
+  
+  .assignments-header h1 {
+    font-size: 2em;
+  }
+  
+  .assignment-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filter-tabs {
+    flex-direction: column;
+  }
+  
+  .assignments-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .weekly-grid {
+    grid-template-columns: 1fr;
+  }
+}

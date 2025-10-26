@@ -1,0 +1,114 @@
+/* src/pages/LessonPage.css */
+.lesson-page {
+  padding: 20px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lesson-header {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lesson-header h1 {
+  color: #333;
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.subject-badge {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.lesson-content {
+  margin-bottom: 30px;
+}
+
+.completion-celebration {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 0 8px 32px rgba(76, 175, 80, 0.3);
+}
+
+.completion-celebration h2 {
+  margin: 0 0 15px 0;
+  font-size: 2em;
+}
+
+.completion-celebration p {
+  margin: 0;
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.lesson-not-found {
+  background: white;
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-not-found h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.lesson-not-found p {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.section-not-found {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-not-found h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section-not-found p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .lesson-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .lesson-header h1 {
+    font-size: 1.8em;
+  }
+  
+  .completion-celebration {
+    padding: 20px;
+  }
+  
+  .completion-celebration h2 {
+    font-size: 1.5em;
+  }
+}

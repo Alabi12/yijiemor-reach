@@ -1,0 +1,88 @@
+/* src/components/Progress/ProgressChart.css */
+.progress-chart {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-chart h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+.progress-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.subject-name {
+  flex: 0 0 150px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.progress-bar-container {
+  flex: 1;
+  height: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.lessons-completed {
+  flex: 0 0 80px;
+  text-align: right;
+  font-size: 0.8em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .progress-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .subject-name {
+    flex: none;
+  }
+  
+  .progress-bar-container {
+    width: 100%;
+  }
+  
+  .lessons-completed {
+    flex: none;
+    text-align: left;
+  }
+}

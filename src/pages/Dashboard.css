@@ -1,0 +1,114 @@
+/* src/components/Dashboard/Dashboard.css */
+.dashboard {
+  padding: 20px 0;
+}
+
+.welcome-section {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-header h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.user-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.co-curricular {
+  margin-top: 40px;
+}
+
+.co-curricular h2 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.activity-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+  background: white;
+  transform: translateY(-5px);
+}
+
+.activity-icon {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.activity-name {
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .welcome-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .user-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

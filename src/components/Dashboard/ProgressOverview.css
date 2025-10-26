@@ -1,0 +1,97 @@
+/* src/components/Dashboard/ProgressOverview.css */
+.progress-overview {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.progress-overview h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.progress-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.progress-stat {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.progress-stat:hover {
+  transform: translateX(5px);
+}
+
+.stat-icon {
+  font-size: 1.8em;
+  flex-shrink: 0;
+}
+
+.stat-info {
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.weekly-focus h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.weekly-focus ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weekly-focus li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 0.9em;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weekly-focus li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .progress-overview {
+    padding: 20px;
+  }
+  
+  .progress-stat {
+    padding: 12px;
+  }
+  
+  .stat-value {
+    font-size: 1.3em;
+  }
+}
