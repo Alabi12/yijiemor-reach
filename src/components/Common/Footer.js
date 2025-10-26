@@ -41,8 +41,8 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact & Support</h4>
           <ul className="footer-links">
-            <li>📧 support@reachelearning.com</li>
-            <li>📞 +1 (555) 123-LEARN</li>
+            <li>📧 https://worank-advert.netlify.app</li>
+            <li>📞 +233-243-334-224</li>
             <li>🕒 Mon-Fri: 8AM-6PM</li>
           </ul>
         </div>
